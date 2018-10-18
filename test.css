@@ -1,3 +1,8 @@
+@keyframes ani {
+    from {border-color: gold;}
+    to {border-color: #8E41D5;}
+}
+
 a{
     color: white;
     font-weight: bold;
@@ -8,7 +13,8 @@ div {
 }
 
 body{
-    background-image: url('dark_wood.png');
+    background-image: linear-gradient(purple, gold);
+    background-attachment: fixed;
 }
 
 p{
@@ -22,6 +28,7 @@ h3{
     font-size: 40px;
     font-family: "Passion One";
     margin-bottom: 0px;
+    text-shadow: 5px 5px black;
 }
 
 li{
@@ -36,10 +43,16 @@ ul{
 #Header{
     width: 500px;
     border: solid 8px black;
+    border-color: gold;
+    border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     text-align: center;
+    animation-name: ani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #Header h1{
@@ -47,17 +60,24 @@ ul{
     font-family: "Passion One";
     color: #FFBC00;
     font-weight: bold;
+    text-shadow: 5px 5px black;
 }
 
 #LeftNav{
     width: 400px;
     border: solid 8px black;
+    border-color: gold;
+    border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     float: left;
     padding-bottom: 8px;
     text-align: center;
+    animation-name: ani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #LeftNav img{
@@ -75,14 +95,26 @@ ul{
 #Content{
     width: 700px;
     border: solid 8px black;
+    border-color: gold;
+    border-radius: 20px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
     text-align: center;
+    animation-name: ani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #Footer{
     border: solid 8px black;
+    border-color: gold;
+    border-radius: 20px;
     text-align: center;
+    animation-name: ani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
