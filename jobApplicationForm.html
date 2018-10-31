@@ -9,9 +9,10 @@
 		color: black;
 		background-color: #EBEBEB;
 		margin-bottom: 20px;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 	}
 	h2 {
-
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 	}
 	div {
 		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -22,7 +23,7 @@
 <body>
 
 <img src="ytlogo.png" alt="icon" style="width:72px;height:50px">
-<h2 style = "position:absolute; top:0px; left:100px">YouTube Partner Application</h2>
+<h2 style = "position:absolute; top:-5px; left:100px">YouTube Partner Application</h2>
 
 <form action="http://gclass.alexburner.com/formtest.php" method="post">
 
@@ -145,44 +146,21 @@
 				<li><input type="checkbox" name="position_tp" value=">5">>5 videos per week</li>
 			</ul>
 		</div>
-		<!--
+
 		<div class="field">
-			<label>Hours available</label>
-			<table>
-				<tr>
-					<td></td>
-					<th>Sun</th>
-					<th>Mon</th>
-					<th>Tue</th>
-					<th>Wed</th>
-					<th>Thu</th>
-					<th>Fri</th>
-					<th>Sat</th>
-				</tr>
-				<tr>
-					<th>From</th>
-					<td><input type="time" size="5" name="su_from"></td>
-					<td><input type="time" size="5" name="mo_from"></td>
-					<td><input type="time" size="5" name="tu_from"></td>
-					<td><input type="time" size="5" name="we_from"></td>
-					<td><input type="time" size="5" name="th_from"></td>
-					<td><input type="time" size="5" name="fr_from"></td>
-					<td><input type="time" size="5" name="sa_from"></td>
-				</tr>
-				<tr>
-					<th>Until</th>
-					<td><input type="time" size="5" name="su_until"></td>
-					<td><input type="time" size="5" name="mo_until"></td>
-					<td><input type="time" size="5" name="tu_until"></td>
-					<td><input type="time" size="5" name="we_until"></td>
-					<td><input type="time" size="5" name="th_until"></td>
-					<td><input type="time" size="5" name="fr_until"></td>
-					<td><input type="time" size="5" name="sa_until"></td>
-				</tr>
-			</table>
+			<label>How often do you upload?</label>
+			<div>
+				<select name="videos">
+					<option value="" selected="true"># of videos</option>
+					<option value="<1">&lt;1 video per week</option>
+					<option value="1">1 video per week</option>
+					<option value=">1">>1 video per week</option>
+					<option value=">5">>5 video per week</option>
+				</select>
+			</div>
 		</div>
 	</fieldset>
--->
+
 	<fieldset>
 		<legend>Personal Statement</legend>
 		<div class="field">
@@ -194,6 +172,8 @@
 			<textarea name="improve" rows="6" cols="60"></textarea>
 		</div>
 	</fieldset>
+
+
 
 	<input type="submit" value="Submit form">
 
